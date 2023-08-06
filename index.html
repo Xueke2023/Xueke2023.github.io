@@ -41,7 +41,7 @@
       
 <div class="overlay" style="background: #4d4d4d"></div>
 <nav>
-    总文章数 2
+    总文章数 3
 </nav>
 <div class="intrude-less">
 	<header id="header" class="inner">
@@ -154,6 +154,147 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Hexo-marktext写博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/">Hexo+marktext写博客</a>
+    </h1>
+  
+
+        
+        <a href="/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2023-08-06T02:50:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-08-06</time>
+</a>
+        
+		
+		<!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1.1k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">3分</span>
+      </span>
+    </span>
+</div>
+
+          
+        <!-- 添加完成 -->
+        
+		
+		  
+		  <!-- 添加代码 -->
+    
+
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用Hexo创建文章"><a href="#使用Hexo创建文章" class="headerlink" title="使用Hexo创建文章"></a>使用Hexo创建文章</h1><p>最近创建了一个博客，主要用来记录一些技术相关的内容和读后感随笔类的长文章。好了，现在来讲一下我是怎么写出第一篇博客文章并且上传到网站上的。</p>
+<p>首先，使用下面这个命令就可以创建一个新的md文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;layout&gt; &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<p>layout：布局或者模板。有三种已有的模板，post(默认)、draft、page。</p>
+<p>在博客目录下<code>D:\Blog</code>打开Git  Bash输入以下命令时，会默认使用post布局，然后自动在<code>source\_posts</code>目录生成一个text.md文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new text</span><br></pre></td></tr></table></figure>
+
+<p>这个文件打开之后就会显示一些信息</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo+marktext写博客</span><br><span class="line">date: 2023-08-06 10:50:51</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>这些信息可以自定义，所以每个人的这些信息可能不太一样。上面的内容在hexo被称作<strong>Front-matter，实际上就是该文章的一些变量，用于实现一些特定的功能</strong>。</p>
+<p>如果想实现自定义，就在Blog\scaffolds\里修改md文件</p>
+<img src="/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/fig1.png" class="" title="fig1">
+
+<h1 id="使用marktext编辑文章"><a href="#使用marktext编辑文章" class="headerlink" title="使用marktext编辑文章"></a>使用marktext编辑文章</h1><p>Hexo是基于Github的博客平台，自然要用到markdown标记语言，它的文本格式就是.md。</p>
+<p>Markdown 是一种轻量级的标记语言，其用简单的标记语法便可达到排版的目的，可以使我们更加专注于内容的编写，而不需过多关注排版。简单来说，我们不需要再动鼠标去放大加粗字体等一系列操作 ，这些功能通过输入简单的语法就可以实现。确实很方便，尤其是写一些技术文章的时候。</p>
+<p>markerdown语法手册在这里。<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">Markdown 基本语法 | Markdown 官方教程</a></p>
+<p>markdown编辑器有很多种。我很早之前就用过Typora，但现在它竟然开始收费了。所以我就用了免费开源的marktext，还有中文版。<a target="_blank" rel="noopener" href="https://marktext.weero.net/">首页 | MarkText中文特别版 (weero.net)</a></p>
+<p>一共有六个主题，选择自己觉得舒服的就好。还包含三种模式，源代码模式，打字机模式和专注模式。</p>
+<p>既能查看源代码，又能进行可视化。另外，在marktext里，还可以直接把图片粘贴上去。</p>
+<p>文章编辑完成之后，就可以通过Hexo重新部署上去。还是三步走。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<h1 id="图片显示"><a href="#图片显示" class="headerlink" title="图片显示"></a>图片显示</h1><p>在marktext插入图片，一般会在博客中不显示。大家解决问题的方法都大同小异，我就记录一下我是怎么做的。</p>
+<p>首先，下载img插件。大多数教程里都下载的是image插件，但据说这个插件已经不能用了。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-img --save</span><br></pre></td></tr></table></figure>
+
+<p>接下来，要注意两点。</p>
+<p>1.博客根目录下 <code>_config.yml</code>文件一定要配置<code>post_asset_folder: true</code>。搭建博客的时候，我就已经在博客的根目录下配置过了。配置过后，新建一个md文件时，<code>source\_posts</code>目录中会自动一个同名的文件夹，这个文件夹就是用来放置对应博客的图片。</p>
+<p>2.使用一下这个语法插入图片。这个地方我试了一下，命名中有中文也没有什么问题。</p>
+<p><code>![图2](Hexo-marktext写博客/图2.png</code></p>
+<p>这个地方我尝试了好多次，都没成功。最后发现，原来是括号搞错了，复制成中文的了。有些时候代码写不对，就是因为忽略了一些很细节的东西，如果多认真一些，就能解决很多问题。而且代码还是要动手自己写一下，不仅能加深印象，还能避免一些不必要的错误。</p>
+<h1 id="md格式转换"><a href="#md格式转换" class="headerlink" title="md格式转换"></a>md格式转换</h1><p>我把文章上传到博客之后，还想发公众号，结果发现公众号不能用markdown语言，怎么办呢？我就找发现了一个编辑器——mdnice，可以支持markdown格式转换为微信公众号和知乎等平台可用的排版。</p>
+<p>mdnice有PC端、网页端和浏览器插件。我用的是网页版。</p>
+<p>直接把md复制到左边框框，右边框框会出现对应的转换后的内容，可以直接复制，然后去公众号粘贴就好了。</p>
+<img src="/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%9B%BE2.png" class="" title="图2">
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">marktext</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
   
     <article id="post-《种子》读后感" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -498,6 +639,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">marktext</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
