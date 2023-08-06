@@ -8,17 +8,18 @@
   <link rel="dns-prefetch" href="http://Xueke2023.github.io">
   <title>Hexo+marktext写博客 | 薛珂</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用Hexo创建文章最近创建了一个博客，主要用来记录一些技术相关的内容和读后感随笔类的长文章。好了，现在来讲一下我是怎么写出第一篇博客文章并且上传到网站上的。 首先，使用下面这个命令就可以创建一个新的md文件。 1hexo new &lt;layout&gt; &lt;title&gt;  layout：布局或者模板。有三种已有的模板，post(默认)、draft、page。 在博客目录下D:\B">
+  <meta name="description" content="使用Hexo创建文章最近创建了一个博客，主要用来记录一些技术相关的内容和读后感随笔类的长文章。好了，现在来讲一下我是怎么写出第一篇博客文章并且上传到网站上的。 首先，使用下面这个命令就可以创建一个新的md文件。 1hexo new &lt;layout&gt; &lt;title&gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+marktext写博客">
 <meta property="og:url" content="http://xueke2023.github.io/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="薛珂">
-<meta property="og:description" content="使用Hexo创建文章最近创建了一个博客，主要用来记录一些技术相关的内容和读后感随笔类的长文章。好了，现在来讲一下我是怎么写出第一篇博客文章并且上传到网站上的。 首先，使用下面这个命令就可以创建一个新的md文件。 1hexo new &lt;layout&gt; &lt;title&gt;  layout：布局或者模板。有三种已有的模板，post(默认)、draft、page。 在博客目录下D:\B">
+<meta property="og:description" content="使用Hexo创建文章最近创建了一个博客，主要用来记录一些技术相关的内容和读后感随笔类的长文章。好了，现在来讲一下我是怎么写出第一篇博客文章并且上传到网站上的。 首先，使用下面这个命令就可以创建一个新的md文件。 1hexo new &lt;layout&gt; &lt;title&gt;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://xueke2023.github.io/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/fig1.png">
+<meta property="og:image" content="http://xueke2023.github.io/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%9B%BE3.png">
 <meta property="og:image" content="http://xueke2023.github.io/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%9B%BE2.png">
 <meta property="article:published_time" content="2023-08-06T02:50:51.000Z">
-<meta property="article:modified_time" content="2023-08-06T08:12:01.733Z">
+<meta property="article:modified_time" content="2023-08-06T09:02:59.986Z">
 <meta property="article:author" content="薛珂">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="marktext">
@@ -187,7 +188,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.1k字</span>
+        <span class="post-count">1.2k字</span>
       </span>
     </span>
 
@@ -196,7 +197,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">3分</span>
+        <span class="post-count">4分</span>
       </span>
     </span>
 </div>
@@ -222,6 +223,8 @@
 <p>首先，使用下面这个命令就可以创建一个新的md文件。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &lt;layout&gt; &lt;title&gt;</span><br></pre></td></tr></table></figure>
 
+<span id="more"></span>
+
 <p>layout：布局或者模板。有三种已有的模板，post(默认)、draft、page。</p>
 <p>在博客目录下<code>D:\Blog</code>打开Git  Bash输入以下命令时，会默认使用post布局，然后自动在<code>source\_posts</code>目录生成一个text.md文件</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new text</span><br></pre></td></tr></table></figure>
@@ -241,6 +244,9 @@
 <p>既能查看源代码，又能进行可视化。另外，在marktext里，还可以直接把图片粘贴上去。</p>
 <p>文章编辑完成之后，就可以通过Hexo重新部署上去。还是三步走。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p><strong>tips：博客页面如果显示全文，会非常不方便。Hexo的yilia主题是带有截断功能的，需要你手动在文章中合适的位置加入一行语法：</strong><code>&lt;!--more--&gt;</code><strong>。你还可以在主题的<code>_config.ym</code>文件中修改<code>excerpt_link</code>，决定截断时显示的文字。一般选择显示”阅读原文“或者”more“的字样。</strong></p>
+<img src="/2023/08/06/Hexo-marktext%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%9B%BE3.png" class="" title="图3">
 
 <h1 id="图片显示"><a href="#图片显示" class="headerlink" title="图片显示"></a>图片显示</h1><p>在marktext插入图片，一般会在博客中不显示。大家解决问题的方法都大同小异，我就记录一下我是怎么做的。</p>
 <p>首先，下载img插件。大多数教程里都下载的是image插件，但据说这个插件已经不能用了。</p>
